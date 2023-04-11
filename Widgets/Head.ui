@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>895</width>
+    <height>613</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>*Congratulations Main Window*</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 170, 0);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="Back">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>10</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Back</string>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>851</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="Category">
+     <attribute name="title">
+      <string>Category</string>
+     </attribute>
+     <widget class="QTableWidget" name="table_Category">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>981</width>
+        <height>531</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <column>
+       <property name="text">
+        <string>id_category</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>definition</string>
+       </property>
+      </column>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Measurment_unit">
+     <attribute name="title">
+      <string>Measurment_unit</string>
+     </attribute>
+     <widget class="QTableWidget" name="table_measurment_unit">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>-10</y>
+        <width>981</width>
+        <height>541</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>131</number>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>id_measured_unit</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>title</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>unit</string>
+       </property>
+      </column>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Optimal_value">
+     <attribute name="title">
+      <string>Optimal_value</string>
+     </attribute>
+     <widget class="QTableWidget" name="table_Optimal_value">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>981</width>
+        <height>531</height>
+       </rect>
+      </property>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>135</number>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>id_category</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>id_measured_unit</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>bottom_border</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>upper_border</string>
+       </property>
+      </column>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="MQTT_Server">
+     <attribute name="title">
+      <string>Mqtt_server</string>
+     </attribute>
+     <widget class="QTableWidget" name="table_MQTT_Server">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>981</width>
+        <height>531</height>
+       </rect>
+      </property>
+      <column>
+       <property name="text">
+        <string>id_server</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>url</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>status</string>
+       </property>
+      </column>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Station">
+     <attribute name="title">
+      <string>Station</string>
+     </attribute>
+     <widget class="QTableWidget" name="table_Station">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>981</width>
+        <height>531</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <column>
+       <property name="text">
+        <string>id_station</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>city</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>name_st</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>status</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>id_saveecobot</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>id_server</string>
+       </property>
+      </column>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Coordinates">
+     <attribute name="title">
+      <string>Coordinates</string>
+     </attribute>
+     <widget class="QTableWidget" name="table_Coordinates">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>981</width>
+        <height>531</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <column>
+       <property name="text">
+        <string>id_station</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>longitude</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>latitude</string>
+       </property>
+      </column>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Favorite_station">
+     <attribute name="title">
+      <string>Favorite</string>
+     </attribute>
+     <widget class="QTableWidget" name="table_Favorite">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>981</width>
+        <height>531</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <column>
+       <property name="text">
+        <string>id_station</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>user_name</string>
+       </property>
+      </column>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="MQTT_Unit">
+     <attribute name="title">
+      <string>Mqtt_Unit</string>
+     </attribute>
+     <widget class="QTableWidget" name="table_MQTT_Unit">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>831</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>831</width>
+        <height>481</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>831</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="whatsThis">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>207</number>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>id_station</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>id_measured_unit</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>server_message</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>order_of_message</string>
+       </property>
+      </column>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Measurment">
+     <attribute name="title">
+      <string>Measurment</string>
+     </attribute>
+     <widget class="QTableWidget" name="table_Measurment">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>841</width>
+        <height>521</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>168</number>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>id_measurment</string>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>time_of_measurment</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>value_m</string>
+       </property>
+       <property name="toolTip">
+        <string notr="true"/>
+       </property>
+       <property name="whatsThis">
+        <string/>
+       </property>
+       <property name="font">
+        <font>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+         <underline>false</underline>
+         <strikeout>false</strikeout>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>id_station</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>id_measured_unit</string>
+       </property>
+      </column>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="Next">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>10</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Next page (Reports)</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="After">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>10</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Next page (Diagrams)</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1262</width>
+    <height>651</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="btn_back">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>590</y>
+      <width>101</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Back</string>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>1191</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="title">
+      <string>First Report</string>
+     </attribute>
+     <widget class="QComboBox" name="combo_name_st_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>201</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QDateEdit" name="start_date">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>70</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTimeEdit" name="start_time">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>131</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QDateEdit" name="end_date">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>70</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTimeEdit" name="end_time">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>130</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_load_report_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>180</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Create Report</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_clear_table_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>220</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Clear Report</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>50</y>
+        <width>91</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Start parametrs</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>110</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Finish parametrs</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="table_report_2">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>10</y>
+        <width>571</width>
+        <height>481</height>
+       </rect>
+      </property>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>141</number>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>Title</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Minimum</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Avarage</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Maximum</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QLabel" name="label_head_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>510</y>
+        <width>891</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>18</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #118ab2;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_load_for_pdf_2">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>180</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Create to file</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Second Report</string>
+     </attribute>
+     <widget class="QTableWidget" name="table_report_1">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>0</y>
+        <width>601</width>
+        <height>481</height>
+       </rect>
+      </property>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>193</number>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>Name station</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Date of Measurment</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Title</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QPushButton" name="btn_load_report">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>110</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Create Report</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_clear_table">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>110</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Clear Report</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_load_report_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Create for individual station</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="combo_name_st">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_head">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>510</y>
+        <width>1161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>18</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #118ab2;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_load_for_pdf">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>150</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Create to file</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

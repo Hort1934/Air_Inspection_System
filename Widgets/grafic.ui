@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1158</width>
+    <height>719</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Diagrams</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>images/Air.png</normaloff>images/Air.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #fffff;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>1131</width>
+      <height>631</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>3</number>
+    </property>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>First</string>
+     </attribute>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>120</y>
+        <width>151</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Start parametrs</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>270</y>
+        <width>151</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Finish parametrs</string>
+      </property>
+     </widget>
+     <widget class="QDateEdit" name="end_date">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>330</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Оберіть до якої дати шукати&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="displayFormat">
+       <string>yyyy-MM-dd</string>
+      </property>
+      <property name="calendarPopup">
+       <bool>true</bool>
+      </property>
+      <property name="date">
+       <date>
+        <year>2022</year>
+        <month>9</month>
+        <day>1</day>
+       </date>
+      </property>
+     </widget>
+     <widget class="QDateEdit" name="start_date">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>180</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Оберіть від якої дати, хочете шукати&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="displayFormat">
+       <string>yyyy-MM-dd</string>
+      </property>
+      <property name="calendarPopup">
+       <bool>true</bool>
+      </property>
+      <property name="date">
+       <date>
+        <year>2022</year>
+        <month>9</month>
+        <day>1</day>
+       </date>
+      </property>
+     </widget>
+     <widget class="QTimeEdit" name="start_time">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>180</y>
+        <width>181</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Введіть годину від початку пошуку&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="wrapping">
+       <bool>false</bool>
+      </property>
+      <property name="keyboardTracking">
+       <bool>true</bool>
+      </property>
+      <property name="showGroupSeparator" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="displayFormat">
+       <string>H:mm:ss</string>
+      </property>
+      <property name="calendarPopup">
+       <bool>false</bool>
+      </property>
+      <property name="time">
+       <time>
+        <hour>23</hour>
+        <minute>20</minute>
+        <second>10</second>
+       </time>
+      </property>
+     </widget>
+     <widget class="QTimeEdit" name="end_time">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>330</y>
+        <width>181</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Введіть кінцеву годину пошуку&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="wrapping">
+       <bool>false</bool>
+      </property>
+      <property name="keyboardTracking">
+       <bool>true</bool>
+      </property>
+      <property name="showGroupSeparator" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="displayFormat">
+       <string>H:mm:ss</string>
+      </property>
+      <property name="calendarPopup">
+       <bool>false</bool>
+      </property>
+      <property name="time">
+       <time>
+        <hour>23</hour>
+        <minute>20</minute>
+        <second>10</second>
+       </time>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="combo_title">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>60</y>
+        <width>201</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Оберіть назву параметру повітря для перевірки&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: white;
+</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="table_grafic">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>10</y>
+        <width>661</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0.5px solid white;
+border-radius: 10px;
+color:#540b0e;
+background-color: #ccccc1;</string>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>329</number>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>City</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Parameter</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QFrame" name="frame_grafic">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>200</y>
+        <width>661</width>
+        <height>391</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: white;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_clear">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>480</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Clear</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_grafic">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>420</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Show graph</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Second</string>
+     </attribute>
+     <widget class="QComboBox" name="combo_name_st">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>310</y>
+        <width>291</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Оберіть назву станції&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: white;
+</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="table_grafic_2">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>10</y>
+        <width>681</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0.5px solid white;
+border-radius: 10px;
+color:#540b0e;
+background-color: #ccccc1;</string>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>226</number>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>Poor</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Very Poor</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Severe</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QFrame" name="frame_grafic_2">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>210</y>
+        <width>681</width>
+        <height>381</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: white;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_clear_2">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>430</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Clear</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_grafic_2">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>370</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Show graph</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Third</string>
+     </attribute>
+     <widget class="QTableWidget" name="table_grafic_3">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>10</y>
+        <width>801</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0.5px solid white;
+border-radius: 10px;
+color:#540b0e;
+background-color: #ccccc1;</string>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>133</number>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>Excellent</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Fine</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Moderate</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Poor</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Very Poor</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Severe</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QFrame" name="frame_grafic_3">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>180</y>
+        <width>801</width>
+        <height>421</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: white;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="combo_name_st_2">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>270</y>
+        <width>231</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Оберіть назву станції&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: white;
+</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_clear_3">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>390</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Clear</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_grafic_3">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>330</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Show graph</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="title">
+      <string>Fourth</string>
+     </attribute>
+     <widget class="QFrame" name="frame_grafic_4">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>170</y>
+        <width>801</width>
+        <height>421</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: white;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="table_grafic_4">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>10</y>
+        <width>801</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0.5px solid white;
+border-radius: 10px;
+color:#540b0e;
+background-color: #ccccc1;</string>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>266</number>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>Excellent</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Fine</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Moderate</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QComboBox" name="combo_name_st_3">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>270</y>
+        <width>231</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Оберіть назву станції&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: white;
+</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_clear_4">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>380</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Clear</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_grafic_4">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>320</y>
+        <width>191</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Show graph</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="btn_back">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>650</y>
+      <width>101</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Back</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
